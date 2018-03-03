@@ -10,6 +10,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 
 import {TranslateModule} from "@ngx-translate/core";
+import {IonicStorageModule} from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {TranslateModule} from "@ngx-translate/core";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    TranslateModule.forRoot()
+    TranslateModule.forRoot(),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
