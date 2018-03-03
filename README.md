@@ -1,2 +1,2 @@
 # votecounter
-APP for counting votes 
+APP for counting votes
