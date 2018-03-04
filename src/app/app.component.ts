@@ -25,6 +25,7 @@ export class MyApp {
   rootPage: any = HomePage;
 
   seggi: Array<Seggio> = [];
+  seggioCorrente: Seggio;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, translate: TranslateService, storage: Storage) {
     this.initializeApp(storage);
@@ -65,9 +66,9 @@ export class MyApp {
     });
   }
 
-  openPage(page) {
+  setSeggioCorrente(seggio) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.seggioCorrente = seggio;
   }
 }

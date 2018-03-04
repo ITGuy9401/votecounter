@@ -7,8 +7,10 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button menuClose ion-item *ngFor="let p of seggi" (click)="setSeggioCorrente(p)">
+        {{p.name}}
+      </button>
+      <button menuClose ion-item [translate]="'add_seggio'">
       </button>
     </ion-list>
   </ion-content>

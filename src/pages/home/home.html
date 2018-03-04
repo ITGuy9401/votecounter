@@ -8,5 +8,7 @@
 </ion-header>
 
 <ion-content padding>
-  <h1 style="text-align: center" [translate]="'seggio'" [translateParams]="{numseggio: '0'}"></h1>
+  <h1 *ngIf="seggioCorrente" style="text-align: center" [translate]="'seggio'"
+      [translateParams]="{numseggio: seggioCorrente.numseggio}"></h1>
+  <h1 *ngIf="!seggioCorrente" style="text-align: center" [translate]="'no_seggio_sel'"></h1>
 </ion-content>
